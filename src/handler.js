@@ -20,9 +20,9 @@ const addNoteHandler = (request, h)=>{
         const response = h.response({
             status : "success", 
             message: "Catatan berhasil ditambahkan!",
-            data : [
-                noteId = id
-            ]
+            data : {
+                noteId : id
+            }
         })
         response.code(201)
         return response
